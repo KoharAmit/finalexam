@@ -81,7 +81,7 @@ else {
         </fieldset>
         <?php
         if ($game['photo'] != null) {
-            echo '<a target="_blank">
+            echo '<a target="_blank" >
 
                 <img class="offset-2 thumbnail"  src="img/game-uploads/' . $game['photo'] . '" 
                 alt="Game Image" />

@@ -5,3 +5,6 @@
 .thumbnail {
    height: 100px;
 }
+.red_delete{
+    background-color: red;
+}

@@ -3,6 +3,12 @@ function yaSure() {
     // use the js confirm() function: OK = true, Cancel = false
     return confirm('Are you sure you want to delete this?');
 }
+function deleteAll() {
+   let confirmation=confirm('Are you sure you want to delete all the items');
+   if (confirmation){
+    header('location:delete-all.php');
+   }
+}
 
 // password compare for registration
 function comparePasswords() {

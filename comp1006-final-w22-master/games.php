@@ -17,6 +17,9 @@ try {
     $cmd = $db->prepare($sql);
     $cmd->execute();
     $games = $cmd->fetchAll();
+    if (!empty($_SESSION['username'])) {
+        echo '<button class="red_delete" onclick="return deleteAll()">Delete all</button>';
+    }
     
     echo '<table class="table table-striped table-hover">
         <thead>
