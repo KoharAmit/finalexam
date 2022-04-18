@@ -17,7 +17,7 @@ try {
     $cmd = $db->prepare($sql);
     $cmd->execute();
     $games = $cmd->fetchAll();
-
+    
     echo '<table class="table table-striped table-hover">
         <thead>
             <th>Title</th>

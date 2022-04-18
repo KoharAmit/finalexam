@@ -81,10 +81,12 @@ else {
         </fieldset>
         <?php
         if ($game['photo'] != null) {
-            echo '<div>
-                <img class="offset-2 thumbnail" src="img/game-uploads/' . $game['photo'] . '" 
+            echo '<a target="_blank">
+
+                <img class="offset-2 thumbnail"  src="img/game-uploads/' . $game['photo'] . '" 
                 alt="Game Image" />
-                </div>';
+                
+                </a> ';
         }
         ?>
         <input name="gameId" id="gameId" type="hidden" value="<?php echo $game['gameId']; ?>" />

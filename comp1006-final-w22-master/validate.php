@@ -6,9 +6,10 @@ require 'include/db.php';
 $sql = "SELECT * FROM examusers WHERE username = :username";
 $cmd = $db->prepare($sql);
 $cmd->bindParam(':username', $username, PDO::PARAM_STR, 50);
-
+print($sql);
 $cmd->execute();
 $user = $cmd->fetch();
+echo $user;
 
 if (!empty($user)) {
     if (password_verify($password, $user['password'])) {
